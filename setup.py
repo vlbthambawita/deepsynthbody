@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Vajira Thambawita",
     author_email="vlbthambawita@gmail.com",
-    description="Unlimited deep synthetic medical data generators.",
+    description="Unlimited deep synthetic medical data generators",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/vlbthambawita/deepsynthbody",
