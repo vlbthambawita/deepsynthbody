@@ -1,0 +1,2 @@
+from deepsynthbody.digestive.gitract.functions import generate
+from deepsynthbody.digestive.gitract.functions import generate_interpolation
