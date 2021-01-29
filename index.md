@@ -1,4 +1,12 @@
-## Welcome to DeepSynthBody Framework
+## Welcome to DeepSynthBody
+
+### Install deepsynthbody library:
+
+```python
+pip install deepsynthbody 
+```
+
+## DeepSynthBody Framework
 
 ![Image](images/deepfakebody-extended-flow-v2.png)
 
@@ -7,6 +15,10 @@
 
 
 -----------
+
+## Generative modles are organized under 11 categories.
+-----
+
 * **deepsynthbody**
     * **Cardiovascular**
     * **[Digestive](#Digestive)** - A generative model is available to generate deepsynth GI tract images. 
