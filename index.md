@@ -1,4 +1,15 @@
-## Welcome to DeepSynthBody
+# Welcome to DeepSynthBody
+
+## Main objectives of Deepsynthbody is to,
+
+1. overcome the privacy related limitations for medical data by producing open access deep synthetic data.
+2. reduce the time-consuming and resource-consuming process of medical data labeling and annotation.
+3. find inter-correlations of human body organs (how one organ affect to other organs) and functions and reproduce them to produce a new model for the human body. 
+
+## Additionaly, Deepsynth body works as:
+
+1. a repository for deep generative models used in medicine.
+2. a data compression mechanism to keep big medical data sets in a small storage without any privacy concerns and space to save large amounts of the data 
 
 ### Install deepsynthbody library:
 
@@ -62,4 +73,7 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
+
+## If you want o contribute this project, please contact us: 
+[deepsynthbody@gmail.com](deepsynthbody@gmail.com)
 
