@@ -1,34 +1,30 @@
 # Welcome to DeepSynthBody
 
+#### **A novel framework to solve data deficiency problems caused by privacy issues and time-consuming and costly medical data annotation processes.**
+
 ## Main objectives of Deepsynthbody is to,
 
 1. overcome the privacy related limitations for medical data by producing open access deep synthetic data.
 2. reduce the time-consuming and resource-consuming process of medical data labeling and annotation.
 3. find inter-correlations of human body organs (how one organ affect to other organs) and functions and reproduce them to produce a new model for the human body. 
 
-## Additionaly, Deepsynth body works as:
+## Additionaly, Deepsynthbody works as:
 
 1. a repository for deep generative models used in medicine.
 2. a data compression mechanism to keep big medical data sets in a small storage without any privacy concerns and space to save large amounts of the data 
 
-### Install deepsynthbody library:
 
-```python
-pip install deepsynthbody 
-```
 
-## DeepSynthBody Framework
+## Big picture of DeepSynthBody framework
 
 ![Image](images/deepfakebody-extended-flow-v2.png)
 
+----
+## How to use this Deepsynthbody as an end-user?
 
 
+### Generative modles are organized under 11 categories.
 
-
------------
-
-## Generative modles are organized under 11 categories.
------
 
 * **deepsynthbody**
     * **Cardiovascular**
@@ -44,36 +40,124 @@ pip install deepsynthbody
     * **Respiratory**
     * **Skeletal**
 
+### Digestive.GItract
+
+
+
+### How to generate random samples?
+
+```python
+pip install deepsynthbody 
+```
+
+```python
+import deepsynthbody.digestive.gitract as gi
+
+>> help(gi.generate)
+'''
+Help on function generate in module deepsynthbody.digestive.gitract.functions:
+
+generate(name, result_dir, checkpoint_dir, num_img_per_tile, num_of_outputs, trunc_psi=0.75, **kwargs)
+    Generate deepfake Gastrointestinal tract images.
+    
+    Keyword arguments:
+    name -- Any name to keep trac of generations
+    result_dir -- A directory to save output
+    checkpoint_dir -- A directory to download pre-trained checkpoints
+    num_img_per_tile -- Number of images per dimenstion of the grid
+    num_of_outputs -- Number of outputs to generate
+    trunc_psi -- value between 0.5 and 1.0 (default 0.75)
+'''
+
+>> gi.generate("test_data", "./result_dir", "./checkpoints", 
+            num_img_per_tile = 1, 
+            num_of_outputs= 10, trunc_psi=0.75)
+
+```
+
+### Random sample generated from **deepsynthbody.digestive.gitract.generate()**
+![Image](images/generated_polyps_style_gan.png)
+
+### How to generate interpolated samples between random samples?
+
+```python
+import deepsynthbody.digestive.gitract as gi
+
+>> help(gi.generate_interpolation)
+'''
+Help on function generate_interpolation in module deepsynthbody.digestive.gitract.functions:
+
+generate_interpolation(name, result_dir, checkpoint_dir, num_img_per_tile, num_of_outputs, num_of_steps_to_interpolate, save_frames, trunc_psi=0.75, **kwargs)
+    Generate deepfake Gastrointestinal tract images.
+    
+    Keyword arguments:
+    name -- Any name to keep trac of generations
+    result_dir -- A directory to save output
+    checkpoint_dir -- A directory to download pre-trained checkpoints
+    num_img_per_tile -- Number of images per dimenstion of the grid
+    num_of_outputs -- Number of outputs to generate
+    num_of_steps_to_interpolate -- Number of step between two random points
+    save_frames -- True if you want frame by frame, otherwise .gif will be generated
+    trunc_psi -- value between 0.5 and 1.0 (default 0.75)
+'''
+
+>> gi.generate_interpolation("test_data", "./result_dir", "./checkpoints",
+                        num_img_per_tile=1,
+                        num_of_outputs=1,
+                        save_frames=True,
+                        num_of_steps_to_interpolate=100,seed=100)
+```
+### Random sample generated from **deepsynthbody.digestive.gitract.generate_interpolation()**
+![Image](images/deepfakebody-interpolation_samples.png)
+
+#### Reference for this implementation:
+```markdown
+@article{Karras2019stylegan2,
+  title   = {Analyzing and Improving the Image Quality of {StyleGAN}},
+  author  = {Tero Karras and Samuli Laine and Miika Aittala and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
+  journal = {CoRR},
+  volume  = {abs/1912.04958},
+  year    = {2019},
+}
+
+@article{zhao2020diffaugment,
+    title   = {Differentiable Augmentation for Data-Efficient GAN Training},
+    author  = {Zhao, Shengyu and Liu, Zhijian and Lin, Ji and Zhu, Jun-Yan and Han, Song},
+    journal = {arXiv preprint arXiv:2006.10738},
+    year    = {2020}
+}
+
+@misc{karras2020training,
+    title   = {Training Generative Adversarial Networks with Limited Data},
+    author  = {Tero Karras and Miika Aittala and Janne Hellsten and Samuli Laine and Jaakko Lehtinen and Timo Aila},
+    year    = {2020},
+    eprint  = {2006.06676},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CV}
+}
+```
+
+----
+----
+## How to contribute to Deepsynthbody as a researcher?
+
+![Image](images/deepfakebody-end-user-functional-flow.png)
+
+
+----
+
 
 
 ------
 
-
-## Digestive
-
-
-
-
-How to generate deepsynth GI tract images?
-
+## Citation:
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+TBA
 ```
 
-## If you want o contribute this project, please contact us: 
+
+## contact us: 
 [deepsynthbody@gmail.com](deepsynthbody@gmail.com)
+
+----
 
