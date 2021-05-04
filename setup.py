@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="deepsynthbody", 
-    version="0.0.1",
+    version="1.0.2",
     author="Vajira Thambawita",
     author_email="vlbthambawita@gmail.com",
     description="Unlimited deep synthetic medical data generators",
@@ -22,7 +22,8 @@ setuptools.setup(
     python_requires='>=3.6',
     install_requires=[
 
-        'deepsynth_gitract'
+        'deepsynth_gitract',
+        'deepfake-ecg'
 
   ],
 )
