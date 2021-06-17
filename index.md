@@ -203,7 +203,7 @@ lead aVF value = lead II value - 0.5 * lead I value
 ```latex
 @inproceedings{deepsynthbody,
   title={DeepSynthBody: the beginning of the end for datadeficiency in medicine},
-  author={Thambawita, Vajira and Hicks, Steven A. and Isaksen, Jonas and Stensen, Mette Haug and Haugen, Trine B. and Kanters, Jørgen, and Parasa, Sravanthi and Lange, Thomas de and Johansen, Håvard D. and Johanse, Dag and Hammer, Hugo L. and Halvorsen, P{\aa}l and Riegler, Michael A.},
+  author={Thambawita, Vajira and Hicks, Steven A. and Isaksen, Jonas and Stensen, Mette Haug and Haugen, Trine B. and Kanters, Jørgen and Parasa, Sravanthi and Lange, Thomas de and Johansen, Håvard D. and Johanse, Dag and Hammer, Hugo L. and Halvorsen, P{\aa}l and Riegler, Michael A.},
   booktitle={In Proceedings of the International Conference on Applied Artificial Intelligence (ICAPAI 2021)},
   year={2021}
 }
